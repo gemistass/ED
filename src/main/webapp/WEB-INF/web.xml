@@ -4,4 +4,14 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+<servlet>
+  	<servlet-name>Addition</servlet-name>
+  	<servlet-class>pac.add.Add_servlet</servlet-class>
+  </servlet>
+   
+   <servlet-mapping>
+   	<servlet-name>Addition</servlet-name>
+   	<url-pattern>/add</url-pattern>
+   </servlet-mapping>
 </web-app>
