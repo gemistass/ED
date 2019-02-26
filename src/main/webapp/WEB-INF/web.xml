@@ -7,7 +7,7 @@
   
 <servlet>
   	<servlet-name>Addition</servlet-name>
-  	<servlet-class>pac.add.Add_servlet</servlet-class>
+  	<servlet-class>proj_1.asd.task_1.Add_servlet</servlet-class>
   </servlet>
    
    <servlet-mapping>
