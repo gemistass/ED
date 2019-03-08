@@ -5,13 +5,47 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   
-<servlet>
-  	<servlet-name>Addition</servlet-name>
-  	<servlet-class>proj_1.asd.task_1.Add_servlet</servlet-class>
-  </servlet>
-   
-   <servlet-mapping>
-   	<servlet-name>Addition</servlet-name>
-   	<url-pattern>/add</url-pattern>
-   </servlet-mapping>
+	<servlet>
+	  	<servlet-name>Addition</servlet-name>
+	  	<servlet-class>servlets.Add_servlet</servlet-class>
+ 	</servlet>   
+ 	
+ 	<servlet>
+	  	<servlet-name>Register</servlet-name>
+	  	<servlet-class>servlets.Register_servlet</servlet-class>
+ 	</servlet>   
+
+ 	
+ 	<servlet>
+	  	<servlet-name>Display</servlet-name>
+	  	<servlet-class>servlets.Display_servlet</servlet-class>
+ 	</servlet> 
+ 	
+ 	<servlet>
+	  	<servlet-name>View</servlet-name>
+	  	<servlet-class>servlets.View_user_servlet</servlet-class>
+ 	</servlet> 
+ 	
+ 	
+ 	
+   	<servlet-mapping>
+	   	<servlet-name>Addition</servlet-name>
+	   	<url-pattern>/add</url-pattern>
+   	</servlet-mapping>
+   	
+   	
+	<servlet-mapping>
+	   	<servlet-name>Register</servlet-name>
+	   	<url-pattern>/register</url-pattern>
+   	</servlet-mapping>
+   	
+   	<servlet-mapping>
+	   	<servlet-name>Display</servlet-name>
+	   	<url-pattern>/display</url-pattern>
+   	</servlet-mapping>
+  
+   	 <servlet-mapping>
+	   	<servlet-name>View</servlet-name>
+	   	<url-pattern>/view_user</url-pattern>
+   	</servlet-mapping>
 </web-app>

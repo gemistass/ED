@@ -1,17 +1,10 @@
 <html>
 <body>
-
-
-<h2>Hello World!</h2>
-
-<%= new java.util.Date() %>
-
-<form action="add" method="get">
-  first num: <input type="text" name="num1"><br>
-  second num: <input type="text" name="num2"><br>
-  <input type="submit" value="Submit">
-</form>
-
-	
+	<h2>Homepage</h2>
+	<div>
+		<a href="http://localhost:8080/proj_1/display">Display Users</a> <a
+			href="http://localhost:8080/proj_1/register.jsp">Register new user</a> <br>
+		<br>
+	</div>
 </body>
 </html>
