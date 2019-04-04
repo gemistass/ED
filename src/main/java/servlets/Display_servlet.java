@@ -37,20 +37,27 @@ public class Display_servlet extends HttpServlet{
 //		rd.include(req, res);
 		
 		//add users for presentation
-		out.println("<html>\r\n" + 
+		out.println("\r\n" + 
+				"<html>\r\n" + 
+				"<head>\r\n" + 
+				"<style>\r\n" + 
+				"body {\r\n" + 
+				"	background-size : cover;\r\n" + 
+				"	background-image:url('https://i.ytimg.com/vi/vZF1ye0c4P4/maxresdefault.jpg');\r\n" + 
+				"	\r\n" + 
+				"}\r\n" + 
+				"div{\r\n" + 
+				"background-color:white;\r\n" + 
+				"width:200px;\r\n" + 
+				"}\r\n" + 
+				"</style>\r\n" + 
+				"</head>\r\n" + 
 				"<body>\r\n" + 
-				"\r\n" + 
-				"\r\n" + 
+				"<div>\r\n" + 
 				"<h3>Display Users</h3>\r\n" + 
 				"\r\n" + 
-				"<div>"
-				+ "</div>\r\n" + 
-				"</body>\r\n" + 
-				"</html>"
-				+ "<div>\r\n" + 
-				"  <a href=\"http://localhost:8080/proj_1/index.jsp\">Home</a>"
-				+ "<br><br>	"
-				+ "\r\n");
+				"\r\n" + 
+				"  <a href=\"http://localhost:8080/proj_1/index.jsp\">Home</a><br><br>	");
 		for (User u : l1) {
 			out.print("  <a href= \"http://localhost:8080/proj_1/view_user?id="+u.getId()+"  \" target=\"_blank\">  ");
 			out.print(u.getFname()+" "+u.getSname());

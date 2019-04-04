@@ -13,7 +13,7 @@ public class User_address {
 	
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)//for multiple, else NonUniqueObjectException					akarakos@iti.gr
+	@GeneratedValue(strategy = GenerationType.IDENTITY)													//for multiple, else NonUniqueObjectException					akarakos@iti.gr
 	@Column(name = "user_addr_id")
 	private int user_addr_id;
 	
